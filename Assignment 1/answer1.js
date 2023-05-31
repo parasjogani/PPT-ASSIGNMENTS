@@ -21,4 +21,4 @@ function sum(nums, target) {
 const nums = [1, 5, 9, 10, 13, 16];
 const target = 26;
 const result = sum(nums, target);
-console.log(result);
+console.log(result); // [3, 5]
