@@ -46,6 +46,6 @@ head = retainAndDelete(head, M, N);
 
 let current = head;
 while (current !== null) {
-    console.log(current.data);
+    console.log(current.data); // 1 2 5 6
     current = current.next;
 }
