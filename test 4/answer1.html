@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS All Position</title>
+
+    <style>
+        .box {
+            width: 250px;
+            height: 150px;
+            padding: 10px;
+            margin-bottom: 10px;
+            color: #000;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Static */
+        .static {
+            position: static;
+            background-color: #f6f62c;
+        }
+
+        /* Fixed */
+        .fixed {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #3838eb;
+        }
+
+        /* Sticky */
+        .sticky {
+            position: sticky;
+            top: 50px;
+            background-color: #37eb37;
+        }
+
+        /* Relative */
+        .relative {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: #ffa500;
+        }
+
+        /* Absolute */
+        .container {
+            position: relative;
+            width: 500px;
+            height: 300px;
+            background-color: #a6a3a3;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: #ee0eee;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box static">Static Position</div>
+    <div class="box fixed">Fixed Position</div>
+    <div class="box sticky">Sticky Position</div>
+    <div class="box relative">Relative Position</div>
+    <div class="container">
+        <div class="box absolute">Absolute Position</div>
+    </div>
+</body>
+
+</html>
