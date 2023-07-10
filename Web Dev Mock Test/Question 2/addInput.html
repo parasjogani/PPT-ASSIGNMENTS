@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Input</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="text" id="input-box" placeholder="Type here....">
+        <button id="submit">Submit</button>
+
+        <ul id="result"></ul>
+    </div>
+
+    <script>
+        const inputBox = document.getElementById("input-box");
+        const submit = document.getElementById("submit");
+        const result = document.getElementById("result")
+
+        submit.addEventListener('click', function () {
+            const userInput = inputBox.value;
+
+            if (userInput !== '') {
+                const listItems = document.createElement('li');
+                listItems.textContent = userInput;
+                result.appendChild(listItems);
+                inputBox.value = '';
+            }
+        })
+    </script>
+</body>
+
+</html>
