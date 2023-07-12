@@ -1,0 +1,52 @@
+body {
+    /* for checking scroll */
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-btn {
+    padding: 6px 14px;
+    background-color: black;
+    color: #fff;
+    border: 1px solid #808080;
+    border-radius: 6px;
+}
+
+.modal-btn:hover {
+    background-color: #fff;
+    color: black;
+    transition: 0.5s;
+}
+
+#modalOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+}
+
+#modalContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#closeModalBtn {
+    margin-top: 10px;
+    padding: 6px 14px;
+    background-color: red;
+    color: #fff;
+    border: 1px solid #808080;
+    border-radius: 6px;
+}
