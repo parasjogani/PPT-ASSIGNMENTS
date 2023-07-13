@@ -1,0 +1,25 @@
+.table-container {
+    max-width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: black;
+    color: white;
+    min-width: max-content;
+    font-size: 28px;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 600px) {
+    .table-container {
+        overflow-x: scroll;
+    }
+}
