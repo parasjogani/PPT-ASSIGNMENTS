@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>One Card</title>
+</head>
+
+<body>
+    <header>
+        <nav class="flex justify-between items-center bg-[#242b2e] h-14 px-10 w-full">
+            <div class="text-white text-2xl">LOGO</div>
+            <div class="hidden md:flex md:list-none md:text-white gap-5">
+                <li>Home</li>
+                <li>Blog</li>
+                <li>About</li>
+                <li>Contact</li>
+            </div>
+            <button class="hidden md:block text-white rounded-md px-7 py-1 bg-[#0072e1]">Login</button>
+
+            <svg class="md:hidden text-white h-[38px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M3 12h18M3 6h18M3 18h18" />
+            </svg>
+
+        </nav>
+    </header>
+
+    <main>
+        <div class="flex flex-col md:flex-row w-full mt-10 md:mx-20 mx-10 gap-10">
+            <div class="md:w-[50%] flex flex-col gap-2 md:mt-20 mt-10">
+                <h2 class="font-bold text-3xl">Say Hi To</h2>
+                <h1 class="font-bold text-6xl text-[#1793f7]">One Card</h1>
+                <p class="font-bold text-lg text-[#1793f7] mt-8">Co-branded Card Issuers :</p>
+                <img class="md:w-[450px] w-[400px] mt-4" src="./Banking_partners_24thJan_dark__.png" alt="bank partner">
+                <p class="md:w-[600px] w-[450px] mt-8">India's best metal credit card. Built with full-stack tech.
+                    Backed by the
+                    principles of simplicity,
+                    transparency, and giving back control to the user.</p>
+            </div>
+            <div class="md:w-[50%]">
+                <video autoplay muted loop class="md:h-[600px] h-[400px]">
+                    <source src="./say_hi_2x_d3_.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
