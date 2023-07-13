@@ -1,0 +1,23 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.gallery img {
+    width: 480px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+p {
+    text-align: center;
+    font-size: 28px;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
