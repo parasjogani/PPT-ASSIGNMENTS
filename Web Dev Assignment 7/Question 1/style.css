@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #515fb5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+/* Quiz Styles */
+#quiz-container {
+    background-color: #1c1a5e;
+    width: 500px;
+    margin-left: 32%;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+#question {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#option-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.option {
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 1px solid white;
+    background-color: #fff;
+    color: black;
+    width: 240px;
+    border-radius: 6px;
+    padding: 6px;
+
+}
+
+.popupSuccess {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 210px;
+}
+.popupFailed {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 210px;
+}
+
+/* Leaderboard Styles */
+#leaderboard-container {
+    background-color: #1c1a5e;
+    width: 500px;
+    margin-left: 32%;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+#leaderboard-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#score-container {
+    text-align: center;
+    margin-bottom: 20px;
+    height: 100px;
+    font-size: 18px;
+}
+
+#result-container {
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+#result {
+    font-size: 22px;
+    font-weight: bold;
+}
