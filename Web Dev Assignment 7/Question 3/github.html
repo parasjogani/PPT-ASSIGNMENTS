@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github User Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>GitHub User Finder</h1>
+        <div class="search-container">
+            <input type="text" id="username" placeholder="Enter a GitHub username">
+            <button onclick="getUserData()">Get Data</button>
+        </div>
+        <div id="user-info" class="user-info">
+            <div id="avatar"></div>
+            <div class="user-data">
+                <div class="col">
+                    <div class="data">Name: <span id="name"></span></div>
+                    <div class="data">Location: <span id="location"></span></div>
+                    <div class="data">Followers: <span id="followers"></span></div>
+                </div>
+                <div class="col">
+                    <div class="data">Public Repos: <span id="public_repo"></span></div>
+                    <div class="data">Bio: <span id="bio"></span></div>
+                    <div class="data">Github Link: <a id="link" href="#" target="_blank">Click!</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./github.js"></script>
+</body>
+
+</html>
