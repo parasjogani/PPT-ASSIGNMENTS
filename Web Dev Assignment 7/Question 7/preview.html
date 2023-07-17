@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Preview</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h2>Publish Your Story</h2>
+            <div class="form-group">
+                <input type="text" id="title" placeholder="Enter Your Story Title">
+            </div>
+            <div class="form-group">
+                <input type="text" id="img" placeholder="Enter Image URL">
+            </div>
+            <div class="form-group">
+                <input type="text" id="author" placeholder="Enter Author Name">
+            </div>
+            <div class="form-group">
+                <input type="text" id="category" placeholder="Enter category Eg. Education">
+            </div>
+            <div class="form-group">
+                <textarea id="story" cols="48" rows="10" placeholder="Enter Your Story"></textarea>
+            </div>
+        </div>
+        <div class="preview-section">
+            <div class="preview-content">
+                <img id="preview-image" src="" alt="random image">
+                <div class="right-preview">
+                    <h2><span id="preview-title"></span></h2>
+                    <p><span id="preview-category"></span></p>
+                    <p><span id="preview-story"></span></p>
+                    <p>Written By <span id="preview-author"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
