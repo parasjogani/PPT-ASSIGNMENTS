@@ -21,6 +21,7 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 4px;
     text-align: center;
+    position: relative;
 }
 
 .product-image {
@@ -36,6 +37,23 @@ h1 {
 
 .product-price {
     margin-top: 5px;
+}
+
+.add-to-cart-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-to-cart-button:hover {
+    background-color: #45a049;
 }
 
 /* Media Queries for Responsive Layout */

@@ -35,6 +35,18 @@ function displayProducts(products) {
         price.textContent = '$' + product.price;
         card.appendChild(price);
 
+        const addToCartButton = document.createElement('button');
+        addToCartButton.className = 'add-to-cart-button';
+        addToCartButton.textContent = 'Add to Cart';
+        addToCartButton.addEventListener('click', () => {
+            addToCart(product);
+        });
+        card.appendChild(addToCartButton);
+
         container.appendChild(card);
     });
+}
+
+function addToCart(product) {
+    console.log('Adding product to cart:', product);
 }
