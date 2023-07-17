@@ -15,6 +15,7 @@ body {
     height: 100vh;
 }
 
+/* Additional CSS styles for the form */
 .form-section {
     background-color: white;
     padding: 20px;
@@ -28,18 +29,9 @@ body {
     margin-bottom: 12px;
 }
 
-.preview-section {
-    width: 63vw;
-    padding: 20px;
-    background-color: white;
-    border-radius: 12px;
-}
-
-/* Additional CSS styles for the form */
 .form-group {
     margin-bottom: 15px;
 }
-
 
 input[type="text"] {
     width: 100%;
@@ -49,6 +41,13 @@ input[type="text"] {
 }
 
 /* Additional CSS styles for the live preview */
+.preview-section {
+    width: 63vw;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+}
+
 .preview-content {
     display: flex;
     justify-content: flex-start;
@@ -68,7 +67,7 @@ input[type="text"] {
     gap: 10px;
 }
 
-.right-preview :nth-child(4){
+.right-preview :nth-child(4) {
     background-color: #1b334b;
     border-radius: 8px;
     color: white;
